@@ -10,6 +10,7 @@ body {
     color: #fff;
 }
 
+
 header {
     width: 100vw;
     height: 100vh;
@@ -25,25 +26,36 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 0px;
 }
 
 nav .logo {
     width: 150px;
+}
+option{
+    background: black;
+    color:#fff ;
 }
 
 .lan-btn {
     font-size: 16px;
     padding: 6px 15px;
     background-color: rgb(37, 36, 36);
-    /* background: transparent; */
-    color: #fff;
+    background:#ffffffc3; 
+    color: #000000;
     border: 1px #fff transparent;
     outline: none;
     border-radius: 4px;
     font-weight: 400;
     cursor: pointer;
+    padding-left: 25px;
 
+}
+#lan-icon{
+    
+    width: 20px;
+    height: 20px;
+    
 }
 
 .lan-btn:focus {
@@ -172,20 +184,29 @@ nav .logo {
     font-weight: 900px;
     }
     .question,.answer{
-        max-width: 80%;
+        max-width: 85%;
         margin: 0% 8%;
+    }
+    .answer{
+        max-width: 90%;
+        min-width: 85%;
+
     }
     #FAQ{
         margin: 0% 8%;
     }
     #get-btn2{
-        margin-top: ;
-        margin: 10px  8% 0% 8%;
+        margin: 10px 8% 0% 8%;
 
     }
+    #question-container{
+        margin-left:50% ;
+        margin-right: 50%;
+    }
+    
 
 }
-#FAQ{
+#FAQ,#mrj{
     margin-bottom: 20px;
 }
 .trending-now h3{
@@ -265,7 +286,7 @@ nav .logo {
     transform: scale(1.1);
     cursor:pointer;
 }
-#question-container{
+#question-container,#card-container{
     margin:60px;
     display:flex;
     flex-direction: column;
@@ -308,4 +329,94 @@ nav .logo {
 #get-btn2{
     max-width: 200px;
     min-width: 200px;
+}
+.card{
+    margin:10px;
+    border-radius: 20px;
+    position: relative;
+    background: linear-gradient(120deg,#4a4acb79,rgba(178, 51, 72, 0.164));
+    padding: 10px 10px 90px 10px ;
+
+}
+.card-title,.card-description{
+    margin:8px;
+    
+}
+.card-description{
+    font-size: 17px;
+    color: #eae7e7a5;
+}
+.card-logo{
+
+    position: absolute;
+    height: 80px;
+    right:10px;
+    bottom: 5px;
+
+}
+@media screen and (min-width:950px){
+    #card-container{
+        margin-left:10%;
+        margin-right:10%;
+
+    }
+    #cards{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+    }
+
+}
+@media screen and (min-width:1250px){
+    #cards{
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+    }
+}
+
+.underlined{
+    text-decoration: underline;
+}
+.footer-element{
+    font-size: 14px;
+    color: #e7dedec7;
+    margin: 10px;
+}
+#footer-elements{
+    margin: 40px 30px ;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width:650px){
+    #footer-elements{
+        display: grid;
+        grid-template-columns:repeat(2,50%) ;
+        margin-left: 10%;
+    }
+    .contact,.last-word{
+         margin-left: 10%;
+    }
+
+}
+@media screen and (min-width:950px){
+    #footer-elements{
+        grid-template-columns:repeat(3,32%) ;
+    }
+
+}
+@media screen and (min-width:1250px){
+    #footer-elements{
+
+        grid-template-columns:repeat(4,25%) ;
+    }
+}
+.lower-lan-btn{
+    margin-left:11%;
+}
+
+.contact{
+    font-size: 15px;
+}
+.last-word{
+    margin-top:70px;
+    margin-bottom: 70px;
 }
