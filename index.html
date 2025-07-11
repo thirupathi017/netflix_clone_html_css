@@ -7,6 +7,7 @@
     <title>netflix clone
     </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icon.png">
 </head>
 
 <body>
@@ -14,7 +15,12 @@
         <nav class="navbar">
             <img src="images/logo.png" alt="" class="logo">
             <div class="lan-sign-btn">
-                <button class="lan-btn">English<img src="images/down-icon.png" alt=" "></button>
+                
+                <select class="lan-btn">
+                       <option>English</option>
+                       <option>Hindi</option>
+                </select>
+                <img id="lan-icon"src="assets/lan-icon.jpg" alt="language icon">
                 <button class="sign-btn">Sign In</button>
 
             </div>
@@ -30,6 +36,9 @@
         </div>
 
     </header>
+
+
+    <!-- Movies -->
     <div class="trending-now">
         <h3>Trending Now</h3>
         <div class="movie-wrap">
@@ -81,65 +90,148 @@
         </div>
     </div>
 
+    <!-- More reasons to join -->
+    <div id="card-container">
+        <h2 id="mrj">More reasons to join</h2>
+        <div id="cards">
+            <div class="card">
+                <h3 class="card-title">Enjoy on your TV</h3>
+                <p class="card-description">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players
+                    and more.</p>
+                <img class="card-logo" src="assets/blog-card-logo1.png" alt="logo1">
+            </div>
+            <div class="card">
+                <h3 class="card-title">Download your shows to watch offline</h3>
+                <p class="card-description">Save your favourites easily and always have something to watch.</p>
+                <img class="card-logo" src="assets/blog-card-logo2.png" alt="logo2">
+            </div>
+            <div class="card">
+                <h3 class="card-title">Watch everywhere</h3>
+                <p class="card-description">Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.
+                </p>
+                <img class="card-logo" src="assets/blog-card-logo3.png" alt="logo3">
+            </div>
+            <div class="card">
+                <h3 class="card-title">Create profiles for kids</h3>
+                <p class="card-description">Send kids on adventures with their favourite characters in a space made just
+                    for them — free with your membership.</p>
+                <img class="card-logo" src="assets/blog-card-logo4.png" alt="logo4">
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Frequently asked question -->
 
     <div id="question-container">
         <h2 id="FAQ">Frequently Asked Questions</h2>
 
         <div>
-        <button class="question">What is Netflix?<span class="non-active"><i class="fa-solid fa-plus"></i></span></button>
-        <p class="answer">
-            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies,
-            anime, documentaries and more  on thousands of internet-connected devices.
-            <br><br>
-            You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price.
-            There's always something new to discover, and new TV shows and movies are added every week!
-        </p>
+            <button class="question">What is Netflix?<span class="non-active"><i
+                        class="fa-solid fa-plus"></i></span></button>
+            <p class="answer">
+                Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies,
+                anime, documentaries and more on thousands of internet-connected devices.
+                <br><br>
+                You can watch as much as you want, whenever you want, without a single ad – all for one low monthly
+                price.
+                There's always something new to discover, and new TV shows and movies are added every week!
+            </p>
         </div>
 
 
         <div>
-        <button class="question">How much does Netflix cost?<span class="non-active"><i class="fa-solid fa-plus"></i></span></button>
-        <p class="answer">
-            Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.
-        </p>
+            <button class="question">How much does Netflix cost?<span class="non-active"><i
+                        class="fa-solid fa-plus"></i></span></button>
+            <p class="answer">
+                Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed
+                monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.
+            </p>
         </div>
 
 
         <div>
-        <button class="question">Where can I watch?<span class="non-active"><i class="fa-solid fa-plus"></i></span></button>
-        <p class="answer">
-            Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
-<br><br>
-You can also download your favourite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
-        </p>
+            <button class="question">Where can I watch?<span class="non-active"><i
+                        class="fa-solid fa-plus"></i></span></button>
+            <p class="answer">
+                Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com
+                from your personal computer or on any internet-connected device that offers the Netflix app, including
+                smart TVs, smartphones, tablets, streaming media players and game consoles.
+                <br><br>
+                You can also download your favourite shows with the iOS or Android app. Use downloads to watch while
+                you're on the go and without an internet connection. Take Netflix with you anywhere.
+            </p>
         </div>
 
         <div>
-        <button class="question">How do I cancel?<span class="non-active"><i class="fa-solid fa-plus"></i></span></button>
-        <p class="answer">
-            Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
-        </p>
+            <button class="question">How do I cancel?<span class="non-active"><i
+                        class="fa-solid fa-plus"></i></span></button>
+            <p class="answer">
+                Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your
+                account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+            </p>
         </div>
 
         <div>
-        <button class="question">What can I watch on Netflix?<span class="non-active"><i class="fa-solid fa-plus"></i></span></button>
-        <p class="answer">
-            Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
-        </p>
+            <button class="question">What can I watch on Netflix?<span class="non-active"><i
+                        class="fa-solid fa-plus"></i></span></button>
+            <p class="answer">
+                Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix
+                originals, and more. Watch as much as you want, anytime you want.
+            </p>
         </div>
 
         <div>
-        <button class="question">Is Netflix good for kids?
-<span class="non-active"><i class="fa-solid fa-plus"></i></span></button>
-        <p class="answer">
-            The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
-<br><br>
-Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
-        </p>
+            <button class="question">Is Netflix good for kids?
+                <span class="non-active"><i class="fa-solid fa-plus"></i></span></button>
+            <p class="answer">
+                The Netflix Kids experience is included in your membership to give parents control while kids enjoy
+                family-friendly TV shows and films in their own space.
+                <br><br>
+                Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of
+                content kids can watch and block specific titles you don’t want kids to see.
+            </p>
         </div>
         <button class="start-btn" id="get-btn2">Get Started <span>&gt;</span></button>
     </div>
+
     
+
+    <!-- Footer -->
+
+    <!-- contact -->
+    <p class="footer-element contact">Questions? Call <span class="underlined">000-800-919-1743</span></p>
+
+    <!-- footer elements -->
+     <div id="footer-elements">
+        <p class="footer-element underlined">FAQ</p>
+        <p class="footer-element underlined">Help Centre</p>
+        <p class="footer-element underlined">Account</p>
+        <p class="footer-element underlined">Media Centre</p>
+        <p class="footer-element underlined">Investor Relations</p>
+        <p class="footer-element underlined">Jobs</p>
+        <p class="footer-element underlined">Ways to Watch</p>
+        <p class="footer-element underlined">Terms of Use</p>
+        <p class="footer-element underlined">Privacy</p>
+        <p class="footer-element underlined">Cookie Preferences</p>
+        <p class="footer-element underlined">Corporate Information</p>
+        <p class="footer-element underlined">Contact Us</p>
+        <p class="footer-element underlined">Speed Test</p>
+        <p class="footer-element underlined">Legal Notices</p>
+        <p class="footer-element underlined">Only on Netflix</p>
+     </div>
+
+     <div class="lan-sign-btn lower-lan-btn">
+                <select class="lan-btn">
+                       <option>English</option>
+                       <option>Hindi</option>
+                       <img id="lan-icon2"src="assets/lan-icon.jpg" alt="language icon">
+                </select>
+
+    </div>
+
+    <p class="footer-element last-word">Netflix India</p>
     <script src="https://kit.fontawesome.com/ef090f4803.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
